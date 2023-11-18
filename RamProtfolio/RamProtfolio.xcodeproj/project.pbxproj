@@ -12,6 +12,15 @@
 		EB8DC4452B078B3300CF97B9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EB8DC4442B078B3300CF97B9 /* Assets.xcassets */; };
 		EB8DC4482B078B3300CF97B9 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EB8DC4472B078B3300CF97B9 /* Preview Assets.xcassets */; };
 		EBC51CF12B078F8200F668CD /* SlpashScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBC51CF02B078F8200F668CD /* SlpashScreenView.swift */; };
+		EBED08672B088EAD00F812A1 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBED08662B088EAD00F812A1 /* MainView.swift */; };
+		EBED08692B088ED000F812A1 /* ListAppView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBED08682B088ED000F812A1 /* ListAppView.swift */; };
+		EBED086B2B088EED00F812A1 /* MLAppView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBED086A2B088EED00F812A1 /* MLAppView.swift */; };
+		EBED086D2B0892F300F812A1 /* ContentsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBED086C2B0892F300F812A1 /* ContentsView.swift */; };
+		EBED08702B089BD000F812A1 /* HeadingTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBED086F2B089BD000F812A1 /* HeadingTextView.swift */; };
+		EBED08722B089E7100F812A1 /* ContentTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBED08712B089E7100F812A1 /* ContentTextView.swift */; };
+		EBED08742B089FA500F812A1 /* SkillsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBED08732B089FA500F812A1 /* SkillsView.swift */; };
+		EBED08782B08BF2400F812A1 /* EditView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBED08772B08BF2400F812A1 /* EditView.swift */; };
+		EBED08B82B08CE1C00F812A1 /* DataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBED08B72B08CE1C00F812A1 /* DataModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,6 +30,15 @@
 		EB8DC4442B078B3300CF97B9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EB8DC4472B078B3300CF97B9 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		EBC51CF02B078F8200F668CD /* SlpashScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SlpashScreenView.swift; sourceTree = "<group>"; };
+		EBED08662B088EAD00F812A1 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+		EBED08682B088ED000F812A1 /* ListAppView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListAppView.swift; sourceTree = "<group>"; };
+		EBED086A2B088EED00F812A1 /* MLAppView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MLAppView.swift; sourceTree = "<group>"; };
+		EBED086C2B0892F300F812A1 /* ContentsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentsView.swift; sourceTree = "<group>"; };
+		EBED086F2B089BD000F812A1 /* HeadingTextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeadingTextView.swift; sourceTree = "<group>"; };
+		EBED08712B089E7100F812A1 /* ContentTextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentTextView.swift; sourceTree = "<group>"; };
+		EBED08732B089FA500F812A1 /* SkillsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SkillsView.swift; sourceTree = "<group>"; };
+		EBED08772B08BF2400F812A1 /* EditView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditView.swift; sourceTree = "<group>"; };
+		EBED08B72B08CE1C00F812A1 /* DataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,6 +93,7 @@
 		EBC51CED2B078CC700F668CD /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				EBED08B72B08CE1C00F812A1 /* DataModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -82,7 +101,12 @@
 		EBC51CEE2B078CCD00F668CD /* View */ = {
 			isa = PBXGroup;
 			children = (
+				EBED086E2B089B9600F812A1 /* Helper Views */,
 				EBC51CF02B078F8200F668CD /* SlpashScreenView.swift */,
+				EBED08662B088EAD00F812A1 /* MainView.swift */,
+				EBED08682B088ED000F812A1 /* ListAppView.swift */,
+				EBED086A2B088EED00F812A1 /* MLAppView.swift */,
+				EBED08772B08BF2400F812A1 /* EditView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -90,8 +114,19 @@
 		EBC51CEF2B078CD400F668CD /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				EBED086C2B0892F300F812A1 /* ContentsView.swift */,
 			);
 			path = Controller;
+			sourceTree = "<group>";
+		};
+		EBED086E2B089B9600F812A1 /* Helper Views */ = {
+			isa = PBXGroup;
+			children = (
+				EBED086F2B089BD000F812A1 /* HeadingTextView.swift */,
+				EBED08712B089E7100F812A1 /* ContentTextView.swift */,
+				EBED08732B089FA500F812A1 /* SkillsView.swift */,
+			);
+			path = "Helper Views";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -164,8 +199,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EBED08702B089BD000F812A1 /* HeadingTextView.swift in Sources */,
+				EBED086D2B0892F300F812A1 /* ContentsView.swift in Sources */,
+				EBED08782B08BF2400F812A1 /* EditView.swift in Sources */,
 				EB8DC4432B078B3100CF97B9 /* ContentView.swift in Sources */,
+				EBED086B2B088EED00F812A1 /* MLAppView.swift in Sources */,
+				EBED08B82B08CE1C00F812A1 /* DataModel.swift in Sources */,
+				EBED08672B088EAD00F812A1 /* MainView.swift in Sources */,
+				EBED08722B089E7100F812A1 /* ContentTextView.swift in Sources */,
+				EBED08742B089FA500F812A1 /* SkillsView.swift in Sources */,
 				EBC51CF12B078F8200F668CD /* SlpashScreenView.swift in Sources */,
+				EBED08692B088ED000F812A1 /* ListAppView.swift in Sources */,
 				EB8DC4412B078B3100CF97B9 /* RamProtfolioApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -14,7 +14,7 @@ struct SlpashScreenView: View {
     
     var body: some View {
         if isActive {
-            ContentView()
+            MainView()
         } else {
             VStack {
                 VStack {
@@ -29,9 +29,6 @@ struct SlpashScreenView: View {
                     withAnimation(.easeIn(duration: 1.0)) {
                         self.size = 0.9
                     }
-//                    withAnimation(.easeOut(duration: 1.0)) {
-//                        self.size = 0.5
-//                    }
                 }
             }
             .onAppear {
