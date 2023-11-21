@@ -19,7 +19,7 @@ struct RamProtfolioApp: App {
     
     var sharedModelContainer: ModelContainer = {
         let schema = Schema([
-            Persons.self,
+            Person.self, PersonSkills.self, PersonExperiences.self, PersonEducation.self
         ])
         let modelConfiguration = ModelConfiguration(schema: schema, isStoredInMemoryOnly: false)
 

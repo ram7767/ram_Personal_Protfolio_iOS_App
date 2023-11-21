@@ -12,6 +12,10 @@
 		EB8DC4452B078B3300CF97B9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EB8DC4442B078B3300CF97B9 /* Assets.xcassets */; };
 		EB8DC4482B078B3300CF97B9 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EB8DC4472B078B3300CF97B9 /* Preview Assets.xcassets */; };
 		EBC51CF12B078F8200F668CD /* SlpashScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBC51CF02B078F8200F668CD /* SlpashScreenView.swift */; };
+		EBE82C3E2B0C7DE600E5A409 /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBE82C3D2B0C7DE600E5A409 /* Person.swift */; };
+		EBE82C402B0C7DF800E5A409 /* PersonSkills.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBE82C3F2B0C7DF800E5A409 /* PersonSkills.swift */; };
+		EBE82C422B0C7E0900E5A409 /* PersonEducation.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBE82C412B0C7E0900E5A409 /* PersonEducation.swift */; };
+		EBE82C442B0C7E1800E5A409 /* PersonExp.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBE82C432B0C7E1800E5A409 /* PersonExp.swift */; };
 		EBED08672B088EAD00F812A1 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBED08662B088EAD00F812A1 /* MainView.swift */; };
 		EBED08692B088ED000F812A1 /* ListAppView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBED08682B088ED000F812A1 /* ListAppView.swift */; };
 		EBED086B2B088EED00F812A1 /* MLAppView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBED086A2B088EED00F812A1 /* MLAppView.swift */; };
@@ -30,6 +34,10 @@
 		EB8DC4442B078B3300CF97B9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EB8DC4472B078B3300CF97B9 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		EBC51CF02B078F8200F668CD /* SlpashScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SlpashScreenView.swift; sourceTree = "<group>"; };
+		EBE82C3D2B0C7DE600E5A409 /* Person.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
+		EBE82C3F2B0C7DF800E5A409 /* PersonSkills.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonSkills.swift; sourceTree = "<group>"; };
+		EBE82C412B0C7E0900E5A409 /* PersonEducation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonEducation.swift; sourceTree = "<group>"; };
+		EBE82C432B0C7E1800E5A409 /* PersonExp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonExp.swift; sourceTree = "<group>"; };
 		EBED08662B088EAD00F812A1 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 		EBED08682B088ED000F812A1 /* ListAppView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListAppView.swift; sourceTree = "<group>"; };
 		EBED086A2B088EED00F812A1 /* MLAppView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MLAppView.swift; sourceTree = "<group>"; };
@@ -94,6 +102,10 @@
 			isa = PBXGroup;
 			children = (
 				EBED08B72B08CE1C00F812A1 /* DataModel.swift */,
+				EBE82C3D2B0C7DE600E5A409 /* Person.swift */,
+				EBE82C3F2B0C7DF800E5A409 /* PersonSkills.swift */,
+				EBE82C412B0C7E0900E5A409 /* PersonEducation.swift */,
+				EBE82C432B0C7E1800E5A409 /* PersonExp.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -207,9 +219,13 @@
 				EBED08B82B08CE1C00F812A1 /* DataModel.swift in Sources */,
 				EBED08672B088EAD00F812A1 /* MainView.swift in Sources */,
 				EBED08722B089E7100F812A1 /* ContentTextView.swift in Sources */,
+				EBE82C402B0C7DF800E5A409 /* PersonSkills.swift in Sources */,
 				EBED08742B089FA500F812A1 /* SkillsView.swift in Sources */,
 				EBC51CF12B078F8200F668CD /* SlpashScreenView.swift in Sources */,
+				EBE82C3E2B0C7DE600E5A409 /* Person.swift in Sources */,
+				EBE82C422B0C7E0900E5A409 /* PersonEducation.swift in Sources */,
 				EBED08692B088ED000F812A1 /* ListAppView.swift in Sources */,
+				EBE82C442B0C7E1800E5A409 /* PersonExp.swift in Sources */,
 				EB8DC4412B078B3100CF97B9 /* RamProtfolioApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
