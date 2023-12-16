@@ -12,9 +12,9 @@ import SwiftData
 struct RamProtfolioApp: App {
     var body: some Scene {
         WindowGroup {
-            SlpashScreenView()
+            ListAppView()
         }
-        .modelContainer(sharedModelContainer)
+        
     }
     
     var sharedModelContainer: ModelContainer = {

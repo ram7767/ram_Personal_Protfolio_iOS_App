@@ -6,68 +6,67 @@
 //
 
 import SwiftUI
-import SwiftData
 
 struct ListAppView: View {
-    @Environment(\.modelContext) private var modelContext
-    @Query private var persons: [Person]
+    
+    @State var list: [ModelData] = []
+    @State var showView = false
     
     var body: some View {
-        NavigationStack {
-            if persons.count > 0 {
-                List {
-                    ForEach(persons) { person in
-                        NavigationLink(destination: EditView(person: person, skills: 0, exp: 0, edu: 0)) {
-                            HeadingTextView(heading: person.name)
+        @State var dummy = list
+        NavigationView {
+            VStack {
+                ScrollView {
+                    ForEach(Array(list.enumerated()), id: \.1.id) { (index,person) in
+                        NavigationLink(destination: EditView(person: person), isActive: $showView) {
+                            
+                            ProfileCellView(person: person, actionOnDel: {
+                                actionOnDelete(index: index)
+                            }, actionOnEdit: {
+                                showView = true
+                            })
                         }
                     }
-                    .onDelete(perform: deleteItems)
                 }
-            } else {
-                VStack {
-                    Image(systemName: "note")
-                        .resizable()
-                        .aspectRatio(contentMode: .fit)
-                        .frame(width: 100, height: 100)
-                    Text("Add new Person")
-                        .frame(maxWidth: .infinity, alignment: .center)
+            }
+            .navigationBarTitleDisplayMode(.inline)
+            .navigationBarHidden(false)
+            .toolbar {
+                ToolbarItem(placement: .principal) {
+                    Text("Profiles")
                         .font(.title)
-                        .padding()
+                        .foregroundStyle(Color("HeadingColor"))
                 }
-                .frame(height: 200, alignment: .center)
-            }
-            
-        }
-        .toolbar {
-            ToolbarItem(placement: .navigationBarTrailing) {
-                EditButton()
-            }
-            ToolbarItem {
-                Button(action: addItem) {
-                    Label("Add Item", systemImage: "plus")
+                ToolbarItem(placement: .topBarTrailing ) {
+                    Button(action: actionOnAddButton, label: {
+                        Image(systemName: "plus")
+                            .font(.title2)
+                            .padding(.trailing)
+                            .foregroundColor(Color("HeadingColor"))
+                    })
                 }
             }
         }
-        .navigationTitle("Note App")
     }
     
-    private func addItem() {
-        withAnimation {
-            let newPerson = Person(id: UUID().uuidString, name: "Change as your whish", details: "Edit")
-            modelContext.insert(newPerson)
-        }
+    private func actionOnAddButton() {
+        list.append( [ModelData(name: "Ram"), ModelData(name: "Mani"), ModelData(name: "Sai"), ModelData(name: "Babu"), ModelData(name: "Raj"), ModelData(name: "Ram")].randomElement()!)
     }
     
-    private func deleteItems(offsets: IndexSet) {
-        withAnimation {
-            for index in offsets {
-                modelContext.delete(persons[index])
-            }
-        }
+    private func actionOnDelete(index: Int) {
+        list.remove(at: index)
     }
+    
+    private func actionOnEdit(person: ModelData) {
+        NavigationLink(
+            destination: EditView(person: person),
+            isActive: .constant(true),
+            label: EmptyView.init
+        )
+    }
+    
 }
 
 #Preview {
     ListAppView()
-        .modelContainer(for: Person.self, inMemory: true)
 }

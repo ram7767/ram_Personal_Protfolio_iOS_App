@@ -19,7 +19,7 @@ class Person {
     @Relationship var exp: [PersonExperiences]?
     @Relationship var education: [PersonEducation]?
     
-    init(id: String, name: String, details: String) {
+    init(id: String = "", name: String = "", details: String = "") {
         self.id = id
         self.name = name
         self.details = details
